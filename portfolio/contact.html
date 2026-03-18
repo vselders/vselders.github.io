@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vaughn Selders | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="header-left">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Vaughn Selders Logo - Return to Home">
+      </a>
+    </div>
+
+    <h1 class="header-title">Vaughn Selders Portfolio</h1>
+
+    <div class="header-right">
+      <button class="menu-toggle" aria-label="Open Navigation Menu" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav-menu" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <h2 style="text-align:center; margin-bottom:2rem;">Contact Me</h2>
+
+    <section class="contact-info">
+      <p>Email: <a href="mailto:vselders@highpoint.edu">vselders@highpoint.edu</a></p>
+      <p>Phone: 704-408-4401</p>
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/vaughn-selders-783a442b5/" target="_blank">
+          View My LinkedIn Profile
+        </a>
+      </p>
+    </section>
+
+    <section class="form-wrapper">
+      <form action="mailto:vselders@highpoint.edu" method="post" enctype="text/plain">
+        
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Vaughn Selders | Last Updated: Feb 2026</p>
+      <p>Contact: <a href="mailto:vselders@highpoint.edu" style="color: var(--tan);">vselders@highpoint.edu</a> | 704-408-4401</p>
+      <div class="footer-links">
+        <a href="https://vselders.github.io/">GitHub</a>
+        <a href="https://www.linkedin.com/in/vaughn-selders-783a442b5/">LinkedIn</a>
+        <a href="https://coolors.co/606c38-283618-fefae0-dda15e-bc6c25">Color Palette</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('#nav-menu ul');
+    mobileMenu.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
