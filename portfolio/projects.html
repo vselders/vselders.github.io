@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vaughn Selders | Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="header-left">
+    <a href="index.html" class="logo-link">
+      <img src="images/logo.png" alt="Vaughn Selders Logo - Return to Home">
+    </a>
+  </div>
+
+  <h1 class="header-title">Vaughn Selders Portfolio</h1>
+
+  <div class="header-right">
+    <button class="menu-toggle" aria-label="Open Navigation Menu" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="nav-menu" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <h2 style="text-align:center; margin-bottom:2rem;">Projects</h2>
+
+  <section class="table-wrapper">
+
+    <table class="styled-table projects-table">
+      <thead>
+        <tr>
+          <th scope="col">Project Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">Preview / Download</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><strong>Photography Portfolio</strong></td>
+          <td>My photography portfolio containing some of my favorite photos shot in the last few years, on both film and digital cameras.</td>
+          <td>
+            <div class="project-preview-container">
+              <embed src="documents/photos.pdf" type="application/pdf" class="project-preview">
+              <a href="documents/photos.pdf" download class="btn-download btn-small">
+                Download
+              </a>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>Stock Evaluator</strong></td>
+          <td>Developed an automated stock analysis dashboard using Google Sheets that generates real-time Buy/Sell/Hold recommendations. Integrated data-scraping workflows to aggregate metrics from multiple financial sources, streamlining the fundamental research process into a single, user-friendly interface.</td>
+          <td>
+            <div class="project-preview-container">
+              <embed src="documents/stock_evaluator_example.pdf" type="application/pdf" class="project-preview">
+              <a href="https://docs.google.com/spreadsheets/d/1QOPY5bsPib_C6Oyi-lRjndttxokmxj90i7I7y9s3RTA/copy?gid=206752966#gid=206752966" download class="btn-download btn-small">
+                Access
+              </a>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>Algorithm Speed Testing Project</strong></td>
+          <td>Developed a C++ performance analysis tool to benchmark and compare the efficiency of various sorting algorithms, including Bubble, Insertion, Selection, Exchange, Heap, Merge, and Quicksort. The program captures real-time performance metrics by tracking execution time (microseconds) alongside fundamental operations like comparisons, swaps, and recursive calls. This project demonstrates a deep understanding of Big O complexity and the practical performance differences between algorithms when handling large, unsorted datasets.</td>
+          <td>
+            <div class="project-preview-container">
+              <embed src="documents/algorithm_speed_tester.cpp" type="application/pdf" class="project-preview">
+              <a href="documents/algorithm_speed_tester.cpp" download class="btn-download btn-small">
+                Download
+              </a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2026 Vaughn Selders | Last Updated: Feb 2026</p>
+    <p>Contact: <a href="mailto:vselders@highpoint.edu" style="color: var(--tan);">vselders@highpoint.edu</a> | 704-408-4401</p>
+    <div class="footer-links">
+      <a href="https://vselders.github.io/">GitHub</a>
+      <a href="https://www.linkedin.com/in/vaughn-selders-783a442b5/">LinkedIn</a>
+      <a href="https://coolors.co/606c38-283618-fefae0-dda15e-bc6c25">Color Palette</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const mobileMenu = document.getElementById('mobile-menu');
+const navMenu = document.querySelector('#nav-menu ul');
+mobileMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
